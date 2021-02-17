@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Scrap</fullName>
+        <default>false</default>
+        <label>Scrap</label>
+    </customValue>
+    <customValue>
+        <fullName>Use As Is</fullName>
+        <default>false</default>
+        <label>Use As Is</label>
+    </customValue>
+    <customValue>
+        <fullName>Rework</fullName>
+        <default>false</default>
+        <label>Rework</label>
+    </customValue>
+    <customValue>
+        <fullName>Repair</fullName>
+        <default>false</default>
+        <label>Repair</label>
+    </customValue>
+    <customValue>
+        <fullName>Return To Vendor</fullName>
+        <default>false</default>
+        <label>Return To Vendor</label>
+    </customValue>
+    <customValue>
+        <fullName>Replace</fullName>
+        <default>false</default>
+        <label>Replace</label>
+    </customValue>
+    <masterLabel>Disposition</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

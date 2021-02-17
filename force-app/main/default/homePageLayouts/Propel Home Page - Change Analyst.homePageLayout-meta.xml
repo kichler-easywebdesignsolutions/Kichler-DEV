@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<HomePageLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <wideComponents>PDLM__User Items To Approve</wideComponents>
+    <wideComponents>PDLM__All Items to Approve</wideComponents>
+    <wideComponents>standard-Dashboard</wideComponents>
+    <wideComponents>PDLM__User Training Assignments</wideComponents>
+    <wideComponents>PDLM__Propel Activities</wideComponents>
+    <wideComponents>standard-Calendar</wideComponents>
+</HomePageLayout>

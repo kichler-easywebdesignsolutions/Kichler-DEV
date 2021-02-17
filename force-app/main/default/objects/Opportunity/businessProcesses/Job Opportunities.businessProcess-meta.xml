@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job Opportunities</fullName>
+    <description>This Opportunity Record Type represents those opportunities where Lead = Job</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Bid</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Opportunity Awarded</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Quote Approved</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

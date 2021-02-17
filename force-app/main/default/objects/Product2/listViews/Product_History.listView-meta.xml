@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Product_History</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>KCPQ_Pricing_Family__c</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <columns>KCPQ_Latest_Cost__c</columns>
+    <columns>UPDATEDBY_USER.ALIAS</columns>
+    <columns>KCPQ_Product_Status__c</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>PRODUCT2.LAST_UPDATE</field>
+        <operation>greaterOrEqual</operation>
+        <value>4/30/2020 12:00 AM</value>
+    </filters>
+    <label>Product History</label>
+</ListView>

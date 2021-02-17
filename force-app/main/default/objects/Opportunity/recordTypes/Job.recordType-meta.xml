@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Job</fullName>
+    <active>true</active>
+    <businessProcess>Job Opportunities</businessProcess>
+    <compactLayoutAssignment>Quotations_Team_Compact_Layout</compactLayoutAssignment>
+    <label>Job</label>
+    <picklistValues>
+        <picklist>ForecastCategoryName</picklist>
+        <values>
+            <fullName>Best Case</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Closed</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Commit</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Omitted</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pipeline</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>LeadSource</picklist>
+        <values>
+            <fullName>Advertisement</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Employee Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>External Referral</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Other</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Public Relations</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Internal</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Seminar - Partner</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Trade Show</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Web</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Word of mouth</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Lead_Type__c</picklist>
+        <values>
+            <fullName>Builder</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Job</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>RSM__c</picklist>
+        <values>
+            <fullName>BLAKE ELLESTAD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CLAIRE SCOTT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>CURTIS JIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DAVE SORENSON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>DONNA BAILEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>FRANCIS POLLART</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>GRAY WHITNEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>HOUSE OEM ACCTS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JACKLYN STANTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAMES KEENLEY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JAMES KEENLEY%2FED</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JEFF REISS</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOE GALLO</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHN DALTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHN DALTON%2FKENTUCKY</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHN DEININGER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHN MONKOWSKI</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHNNY CICACK</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>JOHNNY CICACK%2FDD</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>KURT LEMBKE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MATT CARLTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICHAEL HAMMOND</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MICHEL KADOCHE</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>MILES DUECKER</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>OLD DOMINION LIGHTING</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PATRICK BROCKAMP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>PAUL CONNOR</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RANDY ROBERT</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RICHARD ALAN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RICHARD BROWN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROBERT ESKIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>ROBERT WEBB</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RYAN CARLTON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>RYAN DAVIDSON</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>SPECTRUM HULETT GROUP</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>STEVE MARTIN</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>UYSSES ROSARIO</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type</picklist>
+        <values>
+            <fullName>Existing Business</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>New Business</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>sbaa__ApprovalStatus__c</picklist>
+        <values>
+            <fullName>Approved</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Pending</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Recalled</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Rejected</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+</RecordType>

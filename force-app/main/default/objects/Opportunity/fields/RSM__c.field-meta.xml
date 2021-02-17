@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>RSM__c</fullName>
+    <externalId>false</externalId>
+    <label>RSM</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>MICHAEL HAMMOND</fullName>
+                <default>false</default>
+                <label>MICHAEL HAMMOND</label>
+            </value>
+            <value>
+                <fullName>OLD DOMINION LIGHTING</fullName>
+                <default>false</default>
+                <label>OLD DOMINION LIGHTING</label>
+            </value>
+            <value>
+                <fullName>JOHN DEININGER</fullName>
+                <default>false</default>
+                <label>JOHN DEININGER</label>
+            </value>
+            <value>
+                <fullName>JAMES KEENLEY</fullName>
+                <default>false</default>
+                <label>JAMES KEENLEY</label>
+            </value>
+            <value>
+                <fullName>PATRICK BROCKAMP</fullName>
+                <default>false</default>
+                <label>PATRICK BROCKAMP</label>
+            </value>
+            <value>
+                <fullName>DONNA BAILEY</fullName>
+                <default>false</default>
+                <label>DONNA BAILEY</label>
+            </value>
+            <value>
+                <fullName>JOHN DALTON</fullName>
+                <default>false</default>
+                <label>JOHN DALTON</label>
+            </value>
+            <value>
+                <fullName>SPECTRUM HULETT GROUP</fullName>
+                <default>false</default>
+                <label>SPECTRUM HULETT GROUP</label>
+            </value>
+            <value>
+                <fullName>GRAY WHITNEY</fullName>
+                <default>false</default>
+                <label>GRAY WHITNEY</label>
+            </value>
+            <value>
+                <fullName>STEVE MARTIN</fullName>
+                <default>false</default>
+                <label>STEVE MARTIN</label>
+            </value>
+            <value>
+                <fullName>BLAKE ELLESTAD</fullName>
+                <default>false</default>
+                <label>BLAKE ELLESTAD</label>
+            </value>
+            <value>
+                <fullName>JEFF REISS</fullName>
+                <default>false</default>
+                <label>JEFF REISS</label>
+            </value>
+            <value>
+                <fullName>JOE GALLO</fullName>
+                <default>false</default>
+                <label>JOE GALLO</label>
+            </value>
+            <value>
+                <fullName>RICHARD ALAN</fullName>
+                <default>false</default>
+                <label>RICHARD ALAN</label>
+            </value>
+            <value>
+                <fullName>ROBERT ESKIN</fullName>
+                <default>false</default>
+                <label>ROBERT ESKIN</label>
+            </value>
+            <value>
+                <fullName>RYAN DAVIDSON</fullName>
+                <default>false</default>
+                <label>RYAN DAVIDSON</label>
+            </value>
+            <value>
+                <fullName>PAUL CONNOR</fullName>
+                <default>false</default>
+                <label>PAUL CONNOR</label>
+            </value>
+            <value>
+                <fullName>DAVE SORENSON</fullName>
+                <default>false</default>
+                <label>DAVE SORENSON</label>
+            </value>
+            <value>
+                <fullName>JAMES KEENLEY/ED</fullName>
+                <default>false</default>
+                <label>JAMES KEENLEY/ED</label>
+            </value>
+            <value>
+                <fullName>FRANCIS POLLART</fullName>
+                <default>false</default>
+                <label>FRANCIS POLLART</label>
+            </value>
+            <value>
+                <fullName>RYAN CARLTON</fullName>
+                <default>false</default>
+                <label>RYAN CARLTON</label>
+            </value>
+            <value>
+                <fullName>MICHEL KADOCHE</fullName>
+                <default>false</default>
+                <label>MICHEL KADOCHE</label>
+            </value>
+            <value>
+                <fullName>JOHN MONKOWSKI</fullName>
+                <default>false</default>
+                <label>JOHN MONKOWSKI</label>
+            </value>
+            <value>
+                <fullName>ROBERT WEBB</fullName>
+                <default>false</default>
+                <label>ROBERT WEBB</label>
+            </value>
+            <value>
+                <fullName>MATT CARLTON</fullName>
+                <default>false</default>
+                <label>MATT CARLTON</label>
+            </value>
+            <value>
+                <fullName>CLAIRE SCOTT</fullName>
+                <default>false</default>
+                <label>CLAIRE SCOTT</label>
+            </value>
+            <value>
+                <fullName>RICHARD BROWN</fullName>
+                <default>false</default>
+                <label>RICHARD BROWN</label>
+            </value>
+            <value>
+                <fullName>KURT LEMBKE</fullName>
+                <default>false</default>
+                <label>KURT LEMBKE</label>
+            </value>
+            <value>
+                <fullName>HOUSE OEM ACCTS</fullName>
+                <default>false</default>
+                <label>HOUSE OEM ACCTS</label>
+            </value>
+            <value>
+                <fullName>RANDY ROBERT</fullName>
+                <default>false</default>
+                <label>RANDY ROBERT</label>
+            </value>
+            <value>
+                <fullName>MILES DUECKER</fullName>
+                <default>false</default>
+                <label>MILES DUECKER</label>
+            </value>
+            <value>
+                <fullName>JOHNNY CICACK</fullName>
+                <default>false</default>
+                <label>JOHNNY CICACK</label>
+            </value>
+            <value>
+                <fullName>JOHN DALTON/KENTUCKY</fullName>
+                <default>false</default>
+                <label>JOHN DALTON/KENTUCKY</label>
+            </value>
+            <value>
+                <fullName>JACKLYN STANTON</fullName>
+                <default>false</default>
+                <label>JACKLYN STANTON</label>
+            </value>
+            <value>
+                <fullName>JOHNNY CICACK/DD</fullName>
+                <default>false</default>
+                <label>JOHNNY CICACK/DD</label>
+            </value>
+            <value>
+                <fullName>CURTIS JIN</fullName>
+                <default>false</default>
+                <label>CURTIS JIN</label>
+            </value>
+            <value>
+                <fullName>UYSSES ROSARIO</fullName>
+                <default>false</default>
+                <label>UYSSES ROSARIO</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BusinessProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Builder Opportunities</fullName>
+    <description>This opportunity Record Type represents those opportunities where Lead Type = Builder</description>
+    <isActive>true</isActive>
+    <values>
+        <fullName>Bid</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Lost</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Closed Won</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Contract Execution</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Needs Analysis</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>OFS</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending Approval</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Pending Contract</fullName>
+        <default>false</default>
+    </values>
+    <values>
+        <fullName>Renewal</fullName>
+        <default>false</default>
+    </values>
+</BusinessProcess>

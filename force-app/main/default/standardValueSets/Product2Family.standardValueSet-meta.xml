@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>None</fullName>
+        <default>false</default>
+        <label>None</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_RLM_KICH</fullName>
+        <default>false</default>
+        <label>5_RLM_KICH</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_ACCESSOR</fullName>
+        <default>false</default>
+        <label>5_ACCESSOR</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_NO_FAMLY</fullName>
+        <default>false</default>
+        <label>5_NO_FAMLY</label>
+    </standardValue>
+    <standardValue>
+        <fullName>No Family</fullName>
+        <default>false</default>
+        <label>No Family</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_BRINLEY</fullName>
+        <default>false</default>
+        <label>5_BRINLEY</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_SIX_GROV</fullName>
+        <default>false</default>
+        <label>5_SIX_GROV</label>
+    </standardValue>
+    <standardValue>
+        <fullName>5_DTP_ACCS</fullName>
+        <default>false</default>
+        <label>5_DTP_ACCS</label>
+    </standardValue>
+</StandardValueSet>

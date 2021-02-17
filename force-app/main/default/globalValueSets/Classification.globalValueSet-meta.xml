@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Class I</fullName>
+        <default>false</default>
+        <label>Class I</label>
+    </customValue>
+    <customValue>
+        <fullName>Class IIa</fullName>
+        <default>false</default>
+        <label>Class IIa</label>
+    </customValue>
+    <customValue>
+        <fullName>Class IIb</fullName>
+        <default>false</default>
+        <label>Class IIb</label>
+    </customValue>
+    <customValue>
+        <fullName>Class III</fullName>
+        <default>false</default>
+        <label>Class III</label>
+    </customValue>
+    <customValue>
+        <fullName>Active Implantable Medical Device (AIMD)</fullName>
+        <default>false</default>
+        <label>Active Implantable Medical Device (AIMD)</label>
+    </customValue>
+    <masterLabel>Classification</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

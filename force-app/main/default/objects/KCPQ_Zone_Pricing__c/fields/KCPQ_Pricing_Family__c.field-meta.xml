@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KCPQ_Pricing_Family__c</fullName>
+    <externalId>false</externalId>
+    <label>Pricing Family</label>
+    <required>false</required>
+    <trackHistory>true</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>BALAMIN</fullName>
+                <default>false</default>
+                <label>BALAMIN</label>
+            </value>
+            <value>
+                <fullName>BASICS FANS*</fullName>
+                <default>false</default>
+                <label>BASICS FANS*</label>
+            </value>
+            <value>
+                <fullName>BUILDER FAN*</fullName>
+                <default>false</default>
+                <label>BUILDER FAN*</label>
+            </value>
+            <value>
+                <fullName>BUILDER*</fullName>
+                <default>false</default>
+                <label>BUILDER*</label>
+            </value>
+            <value>
+                <fullName>CABINET</fullName>
+                <default>false</default>
+                <label>CABINET</label>
+            </value>
+            <value>
+                <fullName>DECORATIVE FAN</fullName>
+                <default>false</default>
+                <label>DECORATIVE FAN</label>
+            </value>
+            <value>
+                <fullName>ELAN</fullName>
+                <default>false</default>
+                <label>ELAN</label>
+            </value>
+            <value>
+                <fullName>FIXTURES</fullName>
+                <default>false</default>
+                <label>FIXTURES</label>
+            </value>
+            <value>
+                <fullName>HOME CENTER</fullName>
+                <default>false</default>
+                <label>HOME CENTER</label>
+            </value>
+            <value>
+                <fullName>HOME DEPOT</fullName>
+                <default>false</default>
+                <label>HOME DEPOT</label>
+            </value>
+            <value>
+                <fullName>ILS*</fullName>
+                <default>false</default>
+                <label>ILS*</label>
+            </value>
+            <value>
+                <fullName>LANDSCAPE</fullName>
+                <default>false</default>
+                <label>LANDSCAPE</label>
+            </value>
+            <value>
+                <fullName>LANDSCAPE 12V</fullName>
+                <default>false</default>
+                <label>LANDSCAPE 12V</label>
+            </value>
+            <value>
+                <fullName>LANDSCAPE C - ITEMS</fullName>
+                <default>false</default>
+                <label>LANDSCAPE C - ITEMS</label>
+            </value>
+            <value>
+                <fullName>LEADCO</fullName>
+                <default>false</default>
+                <label>LEADCO</label>
+            </value>
+            <value>
+                <fullName>No Pricing Family</fullName>
+                <default>false</default>
+                <label>No Pricing Family</label>
+            </value>
+            <value>
+                <fullName>RLM</fullName>
+                <default>false</default>
+                <label>RLM</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

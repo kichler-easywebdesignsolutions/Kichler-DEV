@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>CPQ_Compact_Product</fullName>
+    <fields>Name</fields>
+    <fields>ProductCode</fields>
+    <fields>Family</fields>
+    <fields>SBQQ_Product_Catalog__c</fields>
+    <fields>KCPQ_Zone_1_Price_DN__c</fields>
+    <fields>ExternalId</fields>
+    <fields>IsActive</fields>
+    <fields>KCPQ_Zone_1_NS_Price__c</fields>
+    <fields>KCPQ_Zone_12_Price__c</fields>
+    <fields>KCPQ_Zone_2_NS_Price__c</fields>
+    <label>CPQ Compact Product</label>
+</CompactLayout>

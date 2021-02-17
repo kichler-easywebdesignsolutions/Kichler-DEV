@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Quality</fullName>
+        <default>false</default>
+        <label>Quality</label>
+    </customValue>
+    <customValue>
+        <fullName>Engineering</fullName>
+        <default>false</default>
+        <label>Engineering</label>
+    </customValue>
+    <customValue>
+        <fullName>Manufacturing</fullName>
+        <default>false</default>
+        <label>Manufacturing</label>
+    </customValue>
+    <customValue>
+        <fullName>Purchasing</fullName>
+        <default>false</default>
+        <label>Purchasing</label>
+    </customValue>
+    <customValue>
+        <fullName>Exec Team</fullName>
+        <default>false</default>
+        <label>Exec Team</label>
+    </customValue>
+    <customValue>
+        <fullName>Finance</fullName>
+        <default>false</default>
+        <label>Finance</label>
+    </customValue>
+    <customValue>
+        <fullName>Lab</fullName>
+        <default>false</default>
+        <label>Lab</label>
+    </customValue>
+    <customValue>
+        <fullName>Receiving</fullName>
+        <default>false</default>
+        <label>Receiving</label>
+    </customValue>
+    <customValue>
+        <fullName>Warehouse</fullName>
+        <default>false</default>
+        <label>Warehouse</label>
+    </customValue>
+    <customValue>
+        <fullName>Global Logistics</fullName>
+        <default>false</default>
+        <label>Global Logistics</label>
+    </customValue>
+    <customValue>
+        <fullName>Regulatory</fullName>
+        <default>false</default>
+        <label>Regulatory</label>
+    </customValue>
+    <customValue>
+        <fullName>Planning</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Planning</label>
+    </customValue>
+    <customValue>
+        <fullName>Marketing</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Marketing</label>
+    </customValue>
+    <customValue>
+        <fullName>Doc Control</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Doc Control</label>
+    </customValue>
+    <customValue>
+        <fullName>Buyers</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Buyers</label>
+    </customValue>
+    <customValue>
+        <fullName>Transportation</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Transportation</label>
+    </customValue>
+    <masterLabel>Department</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

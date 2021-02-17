@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Design</fullName>
+        <default>true</default>
+        <label>Design</label>
+    </customValue>
+    <customValue>
+        <fullName>Prototype</fullName>
+        <default>false</default>
+        <label>Prototype</label>
+    </customValue>
+    <customValue>
+        <fullName>Pilot</fullName>
+        <default>false</default>
+        <label>Pilot</label>
+    </customValue>
+    <customValue>
+        <fullName>Closed</fullName>
+        <default>false</default>
+        <label>Closed</label>
+    </customValue>
+    <customValue>
+        <fullName>On Hold</fullName>
+        <default>false</default>
+        <label>On Hold</label>
+    </customValue>
+    <customValue>
+        <fullName>Canceled</fullName>
+        <default>false</default>
+        <label>Canceled</label>
+    </customValue>
+    <masterLabel>Phase</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

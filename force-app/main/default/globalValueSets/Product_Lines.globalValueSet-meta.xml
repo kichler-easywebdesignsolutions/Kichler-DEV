@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Meter</fullName>
+        <default>false</default>
+        <label>Meter</label>
+    </customValue>
+    <customValue>
+        <fullName>Cartridge</fullName>
+        <default>false</default>
+        <label>Cartridge</label>
+    </customValue>
+    <customValue>
+        <fullName>Software</fullName>
+        <default>false</default>
+        <label>Software</label>
+    </customValue>
+    <customValue>
+        <fullName>Optics</fullName>
+        <default>false</default>
+        <label>Optics</label>
+    </customValue>
+    <customValue>
+        <fullName>Reagent</fullName>
+        <default>false</default>
+        <label>Reagent</label>
+    </customValue>
+    <customValue>
+        <fullName>Control Solution</fullName>
+        <default>false</default>
+        <label>Control Solution</label>
+    </customValue>
+    <customValue>
+        <fullName>Cross Functional</fullName>
+        <default>false</default>
+        <label>Cross Functional</label>
+    </customValue>
+    <masterLabel>Product Lines</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

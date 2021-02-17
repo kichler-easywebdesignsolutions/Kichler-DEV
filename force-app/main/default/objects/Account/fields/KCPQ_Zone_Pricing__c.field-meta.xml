@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>KCPQ_Zone_Pricing__c</fullName>
+    <externalId>false</externalId>
+    <label>Zone</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>true</trackHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Zone 1</fullName>
+                <default>false</default>
+                <label>Zone 1</label>
+            </value>
+            <value>
+                <fullName>Zone 2</fullName>
+                <default>false</default>
+                <label>Zone 2</label>
+            </value>
+            <value>
+                <fullName>Zone 1 NS</fullName>
+                <default>false</default>
+                <label>Zone 1 NS</label>
+            </value>
+            <value>
+                <fullName>Zone 2 NS</fullName>
+                <default>false</default>
+                <label>Zone 2 NS</label>
+            </value>
+            <value>
+                <fullName>Zone 3</fullName>
+                <default>false</default>
+                <label>Zone 3</label>
+            </value>
+            <value>
+                <fullName>Zone 4</fullName>
+                <default>false</default>
+                <label>Zone 4</label>
+            </value>
+            <value>
+                <fullName>Zone 4 NS</fullName>
+                <default>false</default>
+                <label>Zone 4 NS</label>
+            </value>
+            <value>
+                <fullName>Zone 12</fullName>
+                <default>false</default>
+                <label>Zone 12</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

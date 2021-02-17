@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>All_Future_Pricing</fullName>
+    <columns>NAME</columns>
+    <columns>CREATED_DATE</columns>
+    <columns>KCPQ_Effective_Date__c</columns>
+    <columns>KCPQ_Old_Price__c</columns>
+    <columns>KCPQ_Price_Book__c</columns>
+    <columns>KCPQ_Price_Increase__c</columns>
+    <columns>KCPQ_Price_Increase_Multiplier__c</columns>
+    <columns>KCPQ_Product__c</columns>
+    <columns>OWNER.FIRST_NAME</columns>
+    <filterScope>Mine</filterScope>
+    <label>All Future Pricing</label>
+</ListView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Addi Torsen</fullName>
+        <default>false</default>
+        <label>Addi Torsen</label>
+    </customValue>
+    <customValue>
+        <fullName>Benji Newsome</fullName>
+        <default>false</default>
+        <label>Benji Newsome</label>
+    </customValue>
+    <customValue>
+        <fullName>Meredith Prince</fullName>
+        <default>false</default>
+        <label>Meredith Prince</label>
+    </customValue>
+    <customValue>
+        <fullName>Rhea Evans</fullName>
+        <default>false</default>
+        <label>Rhea Evans</label>
+    </customValue>
+    <masterLabel>Users</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

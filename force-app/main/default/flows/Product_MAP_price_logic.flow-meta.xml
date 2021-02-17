@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <name>AssignmentOver100</name>
+        <label>AssignmentOver100</label>
+        <locationX>789</locationX>
+        <locationY>200</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.KCPQ_MAP_Price__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LogicOver100</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Record_Update_Over_100</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignmentUnder100</name>
+        <label>AssignmentUnder100</label>
+        <locationX>824</locationX>
+        <locationY>631</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.KCPQ_MAP_Price__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LogicUnder100</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record_Under_100</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <name>AssignUnder25</name>
+        <label>AssignUnder25</label>
+        <locationX>1114</locationX>
+        <locationY>458</locationY>
+        <assignmentItems>
+            <assignToReference>$Record.KCPQ_MAP_Price__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>LogicUnder25</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_Record_Under_25</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Included_Pricing_Family</name>
+        <label>Included Pricing Family</label>
+        <locationX>101</locationX>
+        <locationY>475</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>PRICING_FAMILY</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.KCPQ_Pricing_Family__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>BUILDER FAN*</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.KCPQ_Pricing_Family__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>DECORATIVE FAN</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Over_100</targetReference>
+            </connector>
+            <label>Included Pricing Family</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Over_100</name>
+        <label>Over $100</label>
+        <locationX>505</locationX>
+        <locationY>291</locationY>
+        <defaultConnector>
+            <targetReference>Under_100</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Map_Price_Over_100</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.KCPQ_MAP_Price__c</leftValueReference>
+                <operator>GreaterThan</operator>
+                <rightValue>
+                    <numberValue>100.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignmentOver100</targetReference>
+            </connector>
+            <label>Map Price Over $100</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Under_100</name>
+        <label>Under $100</label>
+        <locationX>508</locationX>
+        <locationY>505</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Map_Price_Under_100</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.KCPQ_MAP_Price__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>100.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Under_25</targetReference>
+            </connector>
+            <label>Map Price Under $100</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Under_25</name>
+        <label>Under $25</label>
+        <locationX>807</locationX>
+        <locationY>404</locationY>
+        <defaultConnector>
+            <targetReference>AssignmentUnder100</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Map_Price_Under_25</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.KCPQ_MAP_Price__c</leftValueReference>
+                <operator>LessThan</operator>
+                <rightValue>
+                    <numberValue>25.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>AssignUnder25</targetReference>
+            </connector>
+            <label>Map Price Under $25</label>
+        </rules>
+    </decisions>
+    <formulas>
+        <name>LogicOver100</name>
+        <dataType>Currency</dataType>
+        <expression>(5 * ROUND({!prevMapPrice}/5, 0)) - 0.05</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>LogicUnder100</name>
+        <dataType>Currency</dataType>
+        <expression>(ROUND({!prevMapPrice}, 0)) - 0.05</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>LogicUnder25</name>
+        <dataType>Currency</dataType>
+        <expression>(MCEILING({!prevMapPrice})) - 0.05</expression>
+        <scale>2</scale>
+    </formulas>
+    <interviewLabel>Product MAP price logic {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Product MAP price logic</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Record_Update_Over_100</name>
+        <label>Record Update Over 100</label>
+        <locationX>1055</locationX>
+        <locationY>173</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Record_Under_100</name>
+        <label>Update Record Under 100</label>
+        <locationX>1111</locationX>
+        <locationY>667</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Record_Under_25</name>
+        <label>Update Record Under 25</label>
+        <locationX>1353</locationX>
+        <locationY>408</locationY>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>Included_Pricing_Family</targetReference>
+        </connector>
+        <object>Product2</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <variables>
+        <name>prevMapPrice</name>
+        <dataType>Currency</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <scale>2</scale>
+        <value>
+            <elementReference>$Record.KCPQ_MAP_Price__c</elementReference>
+        </value>
+    </variables>
+</Flow>

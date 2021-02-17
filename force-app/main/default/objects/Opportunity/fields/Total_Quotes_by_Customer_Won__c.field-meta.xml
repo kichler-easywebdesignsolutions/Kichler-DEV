@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Total_Quotes_by_Customer_Won__c</fullName>
+    <description>Total Value of all Quotes to date by Customer Closed Won</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Total Value of all Quotes to date by Customer Closed Won</inlineHelpText>
+    <label>Total Quotes by Customer - Won</label>
+    <precision>16</precision>
+    <required>false</required>
+    <scale>2</scale>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Number</type>
+    <unique>false</unique>
+</CustomField>

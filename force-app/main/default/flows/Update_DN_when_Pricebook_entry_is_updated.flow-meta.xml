@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Adds varProduct2 to collection</description>
+        <name>addProduct2</name>
+        <label>addProduct2</label>
+        <locationX>540</locationX>
+        <locationY>411</locationY>
+        <assignmentItems>
+            <assignToReference>colProduct2</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <elementReference>varProduct</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>loopPricebookEntries</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns the loop variable to the Loop variable.</description>
+        <name>assignVariableToLoopVar</name>
+        <label>assignVariableToLoopVar</label>
+        <locationX>919</locationX>
+        <locationY>229</locationY>
+        <assignmentItems>
+            <assignToReference>varPricebookEntry.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loopPricebookEntries.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>assVarProduct_values</targetReference>
+        </connector>
+    </assignments>
+    <assignments>
+        <description>Assigns Var Product values.</description>
+        <name>assVarProduct_values</name>
+        <label>assVarProduct values</label>
+        <locationX>828</locationX>
+        <locationY>441</locationY>
+        <assignmentItems>
+            <assignToReference>varProduct.Id</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loopPricebookEntries.Product2Id</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varProduct.KCPQ_Zone_1_Price_DN__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>loopPricebookEntries.UnitPrice</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>addProduct2</targetReference>
+        </connector>
+    </assignments>
+    <description>Updates the DN price on the Pricebook record when the Unit price has been updated.</description>
+    <interviewLabel>Update DN when Pricebook entry is updated {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Update DN when Pricebook entry is updated</label>
+    <loops>
+        <description>Loops through the Pricebook Entry Collection to update the colProduct variable.</description>
+        <name>loopPricebookEntries</name>
+        <label>loopPricebookEntries</label>
+        <locationX>410</locationX>
+        <locationY>189</locationY>
+        <collectionReference>colPricebookEntry</collectionReference>
+        <iterationOrder>Asc</iterationOrder>
+        <nextValueConnector>
+            <targetReference>assignVariableToLoopVar</targetReference>
+        </nextValueConnector>
+        <noMoreValuesConnector>
+            <targetReference>updProductRecords</targetReference>
+        </noMoreValuesConnector>
+    </loops>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>Updates Product records</description>
+        <name>updProductRecords</name>
+        <label>updProductRecords</label>
+        <locationX>792</locationX>
+        <locationY>40</locationY>
+        <inputReference>colProduct2</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>50</locationY>
+        <connector>
+            <targetReference>loopPricebookEntries</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Collection of pricebook entry records</description>
+        <name>colPricebookEntry</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <objectType>PricebookEntry</objectType>
+    </variables>
+    <variables>
+        <description>Collection for Product2 records</description>
+        <name>colProduct2</name>
+        <dataType>SObject</dataType>
+        <isCollection>true</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Product2</objectType>
+    </variables>
+    <variables>
+        <description>Variable to hold Pricebook entry in the Loop</description>
+        <name>varPricebookEntry</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>PricebookEntry</objectType>
+    </variables>
+    <variables>
+        <description>Variable for Product</description>
+        <name>varProduct</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>Product2</objectType>
+    </variables>
+</Flow>
